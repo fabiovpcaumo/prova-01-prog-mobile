@@ -1,0 +1,45 @@
+Ex. 01:
+    <EditText
+        android:id="@+id/edtKM"
+        android:layout_width="fill_parent"
+    />
+
+Ex. 02:
+ <TextView
+        android:id="@+id/txtPeso"
+        android:textSize="43dp"
+       />
+
+Ex. 03:
+float valPeso = Float.parseFloat(edtPeso.getText().toString());
+System.out.println(valPeso);
+
+Ex. 04:
+EditText edtTamanho = new EditText(this);
+
+Ex. 05:
+Intent intent = new Intent(this, SobreSistema.class);
+startActivity(intent);
+
+Ex. 06:
+br.com.fatec.fabio
+
+Ex. 07:
+Intent intent = new Intent(this, DadosFrete.class);
+startActivityForResult(intent, 1);
+
+Ex. 08:
+MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.abertura);
+mediaPlayer.start()
+
+Ex. 09:
+SharedPreferences preferences = getSharedPreferences("frete", MODE_PRIVATE);
+preferences.getString("email", null);
+preferences.getFloat("peso", 0);
+
+Ex. 10:
+SharedPreferences preferences = getSharedPreferences("frete", MODE_PRIVATE);
+SharedPreferences.Editor editor = preferences.edit();
+editor.putString("email", "fabiovpcaumo@gmail.com");
+editor.putFloat("peso", 83.4f);
+editor.commit();
